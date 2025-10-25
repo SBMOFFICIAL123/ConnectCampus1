@@ -1,0 +1,40 @@
+/* Navigation */
+nav {
+  background: #4f46e5;
+  text-align: center;
+  padding: 15px 0;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+nav a.active, nav a:hover {
+  background: #3b82f6;
+}
+
+/* Sections */
+section { display: none; padding: 40px; max-width: 900px; margin: 30px auto; background: #fff; border-radius: 15px; }
+section.active { display: block; }
+
+/* Event Cards */
+.event-card { background: #6366f1; color: white; padding: 20px; margin: 15px 0; border-radius: 15px; }
+
+/* Sub-tabs */
+.sub-tabs { text-align: center; margin-bottom: 20px; }
+.sub-tabs button { padding: 10px 20px; margin: 0 10px; border-radius: 10px; cursor: pointer; }
+.sub-tabs button.active { background: #4f46e5; color: white; }
+
+/* Sub-tab content */
+.sub-tab { display: none; }
+.sub-tab.active { display: block; }
+
+/* Form & Table styling */
+form { display: flex; flex-direction: column; }
+input, textarea, button { padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ddd; }
+button { background: #4f46e5; color: white; border: none; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; border: 1px solid #ddd; text-align: center; }
