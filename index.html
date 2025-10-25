@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#" onclick="switchTab('events', this)">Events</a>
+  <a href="#" onclick="switchTab('complaints', this)">Complaints</a>
+</nav>
+
+<!-- Events Section -->
+<section id="events" class="active">
+  <h2>Events</h2>
+  <div class="event-card">
+    <h3>Science Fest</h3>
+    <p>5th Nov | Auditorium</p>
+  </div>
+  <div class="event-card">
+    <h3>Sports Meet</h3>
+    <p>12th Nov | Sports Ground</p>
+  </div>
+</section>
+
+<!-- Complaints Section -->
+<section id="complaints">
+  <h2>Complaints</h2>
+
+  <!-- Sub-tabs -->
+  <div class="sub-tabs">
+    <button onclick="switchSubTab('submit', this)">Submit Complaint</button>
+    <button onclick="switchSubTab('timetable', this)">View Timetable</button>
+  </div>
+
+  <div id="submit" class="sub-tab active">
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="complaint" rows="5" placeholder="Write your complaint..." required></textarea>
+      <button type="submit">Submit Complaint</button>
+    </form>
+    <div id="complaintMsg"></div>
+  </div>
+
+  <div id="timetable" class="sub-tab">
+    <table>
+      <tr><th>Day</th><th>Subject</th></tr>
+      <tr><td>Monday</td><td>Math</td></tr>
+      <tr><td>Tuesday</td><td>Physics</td></tr>
+      <tr><td>Wednesday</td><td>Chemistry</td></tr>
+      <tr><td>Thursday</td><td>Biology</td></tr>
+      <tr><td>Friday</td><td>Computer Science</td></tr>
+    </table>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
